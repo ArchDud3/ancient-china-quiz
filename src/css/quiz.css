@@ -1,0 +1,160 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+header {
+    border-bottom: 1px solid #ffffff35;
+}
+header > h1 {
+    font-size: 20px;
+    text-align: center;
+}
+main {
+    padding: 5%;
+    padding-top: 0;
+}
+.question-image {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.question-image > img {
+    height: auto;
+    width: 30vw;
+    border-radius: 20px;
+}
+.qanda {
+    padding-left: calc(30vw + 5%);
+    padding-top: 22vh;
+}
+.question {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.answers {
+    margin: 5%;
+    padding: 5%;
+    width: 42vw;
+    height: 25vh;
+    display: grid;
+    grid-template-areas: 
+        "answer1 answer2"
+        "answer3 answer4"
+    ;
+}
+.answers > button {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #191919;
+    color: #fff;
+    border: 1px solid #ffffff35;
+    margin: 1.5%;
+    transition: transform 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.answers > button:hover {
+    transform: scale(1.1);
+}
+.answer1 {
+    grid-area: answer1;
+    border-radius: 20px 10px 10px 10px;
+}
+.answer2 {
+    grid-area: answer2;
+    border-radius: 10px 20px 10px 10px;
+}
+.answer3 {
+    grid-area: answer3;
+    border-radius: 10px 10px 10px 20px;
+}
+.answer4 {
+    grid-area: answer4;
+    border-radius: 10px 10px 20px 10px;
+}
+.correct-banner {
+    position: absolute;
+    top: 100%;
+    transform: translate(0, -100%);
+    height: calc(15vh - 6%);
+    width: 94%;
+    left: 0;
+    background-color: rgb(79, 251, 79);
+    padding: 3%;
+    display: none;
+    font-size: 7.5vh;
+    font-weight: 600;
+    z-index: 2;
+}
+.correct-banner > p {
+    padding: 0;
+    padding-left: 3%;
+    margin: 0;
+}
+.correct-banner > i {
+    font-size: 9vh;
+}
+
+.incorrect-banner {
+    position: absolute;
+    top: 100%;
+    transform: translate(0, -100%);
+    height: calc(15vh - 6%);
+    width: 94%;
+    left: 0;
+    background-color: rgb(251, 79, 79);
+    padding: 3%;
+    display: none;
+    font-size: 7.5vh;
+    font-weight: 600;
+    z-index: 2;
+}
+.incorrect-banner > p {
+    padding: 0;
+    padding-left: 3%;
+    margin: 0;
+}
+.incorrect-banner > i {
+    font-size: 9vh;
+}
+@keyframes bannerPopUp {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(0, -100%);
+    }
+}
+@keyframes bannerPopDown {
+    from {
+        transform: translate(0, -100%);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+#question2 {
+    position: absolute;
+    display: none;
+    left: 120%;
+    background-color: #000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+}
+#question3 {
+    display: none;
+}
+@keyframes slideContent {
+    from {
+        left: 120%;
+    }
+    to {
+        left: 0;
+    }
+}
