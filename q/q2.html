@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ancient China Quiz</title>
-    <link rel="stylesheet" href="src/css/quiz.css">
-    <script src="src/js/quiz.js" defer></script>
+    <link rel="stylesheet" href="/src/css/quiz.css">
+    <script src="/src/js/quiz.js" defer></script>
     <script src="https://kit.fontawesome.com/2172e4ad38.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="src/img/Q1-Emperor.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/img/Q1-Emperor.jpg" type="image/x-icon">
 </head>
 <body>
     <main id="question1">
@@ -16,12 +16,12 @@
         </header>
         <div class="question-image"><img src="/src/img/Q1-Emperor.jpg" alt="Emperor"></div>
         <div class="qanda">
-            <div class="question">Who was the first Emperor of China?</div>
+            <div class="question">What did Emperor Qin Shi Huangdi do?</div>
             <div class="answers">
-                <button class="answer incorrect-answer answer1">Bun Son Dao</button>
-                <button class="answer incorrect-answer2 answer2">Wu of Han</button>
-                <button class="answer correct-answer answer3">Qin Shi Huangdi</button>
-                <button class="answer incorrect-answer3 answer4">Xianfeng</button>
+                <button class="answer incorrect-answer answer1">Made there be 5 different types of wheels</button>
+                <button class="answer correct-answer answer2">Made all chinese money the same</button>
+                <button class="answer incorrect-answer2 answer3">Connected trade routes with Russia</button>
+                <button class="answer incorrect-answer3 answer4">Buried people alive in his tomb</button>
             </div>
         </div>
         <div class="back-next">
@@ -35,17 +35,17 @@
 
         function correctAnswerBannerNextFn() {
             answeredAlready = false;
-            document.location.href = "/q/q2"
-            localStorage.setItem("q1a", true)
+            document.location.href = "/q/q3"
+            localStorage.setItem("q2a", true)
         }
-
+        
         incorrectAnswerBannerNext = document.querySelector(".incorrect-next");
         incorrectAnswerBannerNext.addEventListener("click", incorrectAnswerBannerNextFn)
 
         function incorrectAnswerBannerNextFn() {
             answeredAlready = false;
-            document.location.href = "/q/q2"
-            localStorage.setItem("q1a", false)
+            document.location.href = "/q/q3"
+            localStorage.setItem("q2a", false)
         }
     </script>
 </body>

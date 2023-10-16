@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient China Quiz | Results</title>
+    <link rel="stylesheet" href="/src/css/quiz.css">
+    <script src="https://kit.fontawesome.com/2172e4ad38.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/src/img/Q1-Emperor.jpg" type="image/x-icon">
+</head>
+<body>
+    <main id="question1">
+        <header>
+            <h1>Results</h1>
+        </header>
+        <h1 style="text-align: center;">Question 1: <span id="q1an"></span></h1>
+        <h1 style="text-align: center;">Question 2: <span id="q2an"></span></h1>
+        <h1 style="text-align: center;">Question 3: <span id="q3an"></span></h1>
+        <h1 style="text-align: center;">Question 4: <span id="q4an"></span></h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="text-align: center;">Try again? <span onclick="newGame()">✓</span> | <span onclick="quitGame()">×</span></h1>
+    </main>
+    <script>
+        if(localStorage.getItem("q1a") == "true") {
+            document.querySelector("#q1an").innerHTML = "✓";
+        } else {
+            document.querySelector("#q1an").innerHTML = "×";
+        }
+        if(localStorage.getItem("q2a") == "true") {
+            document.querySelector("#q2an").innerHTML = "✓";
+        } else {
+            document.querySelector("#q2an").innerHTML = "×";
+        }
+        if(localStorage.getItem("q3a") == "true") {
+            document.querySelector("#q3an").innerHTML = "✓";
+        } else {
+            document.querySelector("#q3an").innerHTML = "×";
+        }
+        if(localStorage.getItem("q4a") == "true") {
+            document.querySelector("#q4an").innerHTML = "✓";
+        } else {
+            document.querySelector("#q4an").innerHTML = "×";
+        }
+
+        function newGame() {
+            localStorage.clear();
+            document.location.href = "/quiz";
+        }
+
+        function quitGame() {
+            localStorage.clear();
+            document.location.href = "/";
+        }
+
+    </script>
+</body>
+</html>

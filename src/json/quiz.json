@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "title": "Who was the first emperor of China?",
+      "answer1": "Emperor Qin Shi Huangdi",
+      "answer2": "Emperor Bun Son Dao",
+      "answer3": "Emperor Wu of Han",
+      "answer4": "Emperor Mao Zedong",
+      "answers": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "reasons": {
+        "q1": "All wheels were to be 1.5m in diameter, to standardise roads for everyone.",
+        "q2": "The silk road went through Mongolia, but didn't go any further up.",
+        "q3": "Qin wanted his empire to be the only empire, so he standardised his money for all Chinese people to use.",
+        "q4": "Qin Shi Huangdi's mausoleum was one of the first to not bury people alive as a sacrifice."
+      },
+      "choice": "Single"
+    },
+    {
+      "title": "What did Emperor Qin Shi Huangdi do?",
+      "answer1": "Reformed the wheels on Carts",
+      "answer2": "Connected trade routes with Russia",
+      "answer3": "Made all chinese money the same",
+      "answer4": "Buried people alive in his tomb",
+      "answers": {
+        "1": true,
+        "2": false,
+        "3": true,
+        "4": false
+      },
+      "reasons": {
+        "1": "All wheels were to be 1.5m in diameter, to standardise roads for everyone.",
+        "2": "The silk road went through Mongolia, but didn't go any further up.",
+        "3": "Qin wanted his empire to be the only empire, so he standardised his money for all Chinese people to use.",
+        "4": "Qin Shi Huangdi's mausoleum was one of the first to not bury people alive as a sacrifice."
+      },
+      "choice": "Multiple"
+    },
+    {
+      "title": "How many years was Emperor Qin Shi Huangdi in reign?",
+      "answer1": "43",
+      "answer2": "76",
+      "answer3": "23",
+      "answer4": "35",
+      "answers": {
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": true
+      },
+      "reasons": {
+        "1": "Qin's reign was for 35 years, and it ended when he passed away.",
+        "2": "Qin's reign was for 35 years, and it ended when he passed away.",
+        "3": "Qin's reign was for 35 years, and it ended when he passed away.",
+        "4": "Qin's reign was for 35 years, and it ended when he passed away."
+      },
+      "choice": "Single"
+    },
+    {
+      "title": "Why was the Terracotta army built?",
+      "answer1": "To give something cool to future generations",
+      "answer2": "To make sure that the past emperors would have an army",
+      "answer3": "To make sure he was ready to fight in the second life",
+      "answer4": "To let China take over the second life",
+      "answers": {
+        "1": false,
+        "2": false,
+        "3": true,
+        "4": false
+      },
+      "reasons": {
+        "1": "Qin Shi Huangdi wanted to have a standing army in the second life. They didn't really care that much about future generations.",
+        "2": "Qin wanted his army to be the best one in the second life, and we are unsure if he even thought about this at all.",
+        "3": "Qin wanted his army to be brought into the second life, and to be ready for battle as soon as he passed away.",
+        "4": "Qin only wanted his army to win, not any others, so this may be true however he did want his army to be ready for battle."
+      },
+      "choice": "Single"
+    }
+  ]
+}
