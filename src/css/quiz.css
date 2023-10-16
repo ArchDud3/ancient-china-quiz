@@ -170,7 +170,7 @@ main {
     border-radius: 20px;
     position: fixed;
     left: 100%;
-    transform: translateX(calc(-100% - 40px));
+    transform: translateX(calc(-100% - 10px));
 }
 .incorrect-next {
     width: 150px;
@@ -183,7 +183,7 @@ main {
     border-radius: 20px;
     position: fixed;
     left: 100%;
-    transform: translateX(calc(-100% - 40px));
+    transform: translateX(calc(-100% - 10px));
 }
 
 @media screen and (max-width: 800px) {
@@ -208,17 +208,21 @@ main {
         padding-right: 0;
     }
     .incorrect-banner {
-        font-size: 40px;
+        font-size: 20px;
         height: max-content;
     }
     .incorrect-banner > i {
-        font-size: 50px;
+        font-size: 30px;
     }
     .correct-banner {
-        font-size: 40px;
+        font-size: 20px;
         height: max-content;
     }
     .correct-banner > i {
-        font-size: 50px;
+        font-size: 30px;
+    }
+    .correct-next, .incorrect-next {
+        font-size: 20px;
+        height: 40px;
     }
 }
