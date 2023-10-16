@@ -208,14 +208,14 @@ main {
         padding-right: 0;
     }
     .incorrect-banner {
-        font-size: 20px;
+        font-size: 25px;
         height: max-content;
     }
     .incorrect-banner > i {
         font-size: 30px;
     }
     .correct-banner {
-        font-size: 20px;
+        font-size: 25px;
         height: max-content;
     }
     .correct-banner > i {
