@@ -162,26 +162,28 @@ main {
 .correct-next {
     width: 150px;
     height: 50px;
-    margin-top: 20px;
     font-size: 30px;
     color: #fff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 4px solid rgba(69, 227, 69, 0.712);
     background-color: rgb(108, 255, 108);
     border-radius: 20px;
-    margin-left: 55vw;
+    position: fixed;
+    left: 100%;
+    transform: translateX(calc(-100% - 40px));
 }
 .incorrect-next {
     width: 150px;
     height: 50px;
-    margin-top: 20px;
     font-size: 30px;
     color: #fff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 4px solid rgba(227, 69, 69, 0.712);
     background-color: rgb(255, 108, 108);
     border-radius: 20px;
-    margin-left: 55vw;
+    position: fixed;
+    left: 100%;
+    transform: translateX(calc(-100% - 40px));
 }
 
 @media screen and (max-width: 800px) {
@@ -212,19 +214,11 @@ main {
     .incorrect-banner > i {
         font-size: 50px;
     }
-    .incorrect-next {
-        margin-left: 50px;
-        margin-top: 0;
-    }
     .correct-banner {
         font-size: 40px;
         height: max-content;
     }
     .correct-banner > i {
         font-size: 50px;
-    }
-    .correct-next {
-        margin-left: 50px;
-        margin-top: 0;
     }
 }
