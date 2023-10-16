@@ -5,6 +5,7 @@ body {
     height: 100%;
     width: 100%;
     overflow: scroll;
+    margin: 0;
 }
 header {
     border-bottom: 1px solid #ffffff35;
@@ -198,8 +199,11 @@ main {
         scale: 0.8;
     }
     .answers {
-        width: 80%;
+        width: 100%;
         margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 0;
     }
     .incorrect-banner {
         font-size: 40px;
