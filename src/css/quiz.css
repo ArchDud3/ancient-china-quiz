@@ -223,6 +223,6 @@ main {
     }
     .correct-next, .incorrect-next {
         font-size: 20px;
-        height: 40px;
+        height: 30px;
     }
 }
